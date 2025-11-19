@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knotware Engineers | Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top left, #01271e, #022c24, #064f42);
+      color: #e0f2e9;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(6, 60, 49, 0.9);
+      padding: 15px 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      color: #a9e5bb;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #c9f3d8;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #70e1b9;
+      transform: scale(1.1);
+    }
+
+    .home {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #a9e5bb;
+      margin-bottom: 25px;
+      box-shadow: 0 0 25px rgba(169, 229, 187, 0.4);
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(169, 229, 187, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(169, 229, 187, 0.7); }
+      100% { box-shadow: 0 0 15px rgba(169, 229, 187, 0.3); }
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #a9e5bb;
+      margin-bottom: 15px;
+      text-shadow: 0 0 20px rgba(169, 229, 187, 0.4);
+      animation: slideUp 1.5s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #c9f3d8;
+      max-width: 600px;
+      line-height: 1.6;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .btn {
+      margin-top: 30px;
+      background: #70e1b9;
+      color: #052f27;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #93f1c9;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #8fd5b3;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h2 { font-size: 2rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KNOTWARE ENGINEERS</h1>
+    <nav>
+      <ul>
+        <li><a href="knotware.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="P.Assessment.html">P. Assessment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home">
+    <img src="logo.jpg" alt="Knotware Logo" class="logo">
+    <h2>Welcome to Knotware Engineers</h2>
+    <p>“Engineering the future, one connection at a time.”  
+    <br>Where innovation meets precision, and technology builds tomorrow.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <footer>
+    © 2025 Knotware Engineers. All rights reserved.
+  </footer>
+
+</body>
+</html>
